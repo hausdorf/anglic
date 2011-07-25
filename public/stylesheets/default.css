@@ -26,11 +26,25 @@
   background-color: #de0b0b;
   padding-top: 13px; }
 
+#splash-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 250px;
+  margin-left: -200px;
+  margin-right: -125px;
+  margin-top: -62.5px;
+  background-color: #e0e0e0;
+  background: -moz-radial-gradient(circle farthest-side, #e0e0e0 60%, #adadad 150%);
+  box-shadow: 0px 5px 10px 2px #333; }
+
 #splash-logo {
   position: fixed;
   top: 50%;
   left: 50%;
   width: 100px;
+  height: 50px;
   margin-left: -50px;
   margin-right: -25px;
   margin-top: 0px;
@@ -50,6 +64,7 @@
   top: 50%;
   left: 50%;
   width: 200px;
+  height: 50px;
   margin-left: -100px;
   margin-right: -25px;
   margin-top: 60px;
@@ -62,6 +77,7 @@
   top: 50%;
   left: 50%;
   width: 800px;
+  height: 50px;
   margin-left: -400px;
   margin-right: -25px;
   margin-top: 90px;
@@ -73,6 +89,7 @@ ul#splash-footer {
   top: 100%;
   left: 50%;
   width: 800px;
+  height: 50px;
   margin-left: -400px;
   margin-right: -25px;
   margin-top: -50px;
@@ -93,7 +110,9 @@ body {
   color: #5f5c63;
   background-color: #e0e0e0;
   font-family: helvetica, arial;
-  font-size: 13px; }
+  font-size: 13px;
+  background-image: url("../images/bghurtsmyeyes.jpg");
+  background-repeat: repeat; }
   body a {
     font-weight: bold;
     text-decoration: none;
