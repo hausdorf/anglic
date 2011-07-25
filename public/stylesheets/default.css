@@ -1,0 +1,103 @@
+/*
+ * _std.scss
+ * Handles main standards of page, i.e., main body width, etc.
+ */
+/*
+ * _std.scss
+ * Handles main standards of page, i.e., main body width, etc.
+ */
+/*
+ * _logo.scss
+ * Contains all CSS for the anglic logo magic.
+ */
+/*
+ * _std.scss
+ * Handles main standards of page, i.e., main body width, etc.
+ */
+#logo {
+  width: 100px;
+  height: 37px;
+  font-size: 25px;
+  font-family: palatino;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #de0b0b;
+  padding-top: 13px; }
+
+#splash-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  margin-right: -25px;
+  margin-top: 0px;
+  width: 100px;
+  height: 37px;
+  font-size: 25px;
+  font-family: palatino;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #de0b0b;
+  padding-top: 13px; }
+
+#splash-motto {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  margin-right: -25px;
+  margin-top: 60px;
+  text-shadow: 0 -1px 0px white;
+  text-align: center;
+  color: #9a95a1; }
+
+#splash-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  margin-right: -25px;
+  margin-top: 90px;
+  text-shadow: 0 -1px 0px white;
+  text-align: center; }
+
+ul#splash-footer {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  width: 800px;
+  margin-left: -400px;
+  margin-right: -25px;
+  margin-top: -50px;
+  color: #9a95a1;
+  text-shadow: 0 -1px 0px white;
+  font-size: 10px;
+  padding: 0px;
+  text-align: center;
+  list-style: none; }
+  ul#splash-footer li {
+    display: inline;
+    padding: 3px; }
+
+body {
+  width: 800px;
+  padding: 0;
+  margin: 0;
+  color: #5f5c63;
+  background-color: #e0e0e0;
+  font-family: helvetica, arial;
+  font-size: 13px; }
+  body a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #5f5c63; }
+    body a:hover {
+      background-color: #fff; }

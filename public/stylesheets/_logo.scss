@@ -1,0 +1,33 @@
+/*
+ * _logo.scss
+ * Contains all CSS for the anglic logo magic.
+ */
+@import "std";
+
+$logo-width: 100px;
+$logo-height: 50px;
+$logo-bgcolor: #de0b0b;
+$logo-txtcolor: white;
+
+@mixin logo {
+    $padding-top: 13px;
+
+    width: $logo-width;
+    height: $logo-height - $padding-top;
+
+    font: {
+        size: 25px;
+        family: palatino;
+        style: italic;
+        weight: bold;
+    }
+    text-align: center;
+    color: $logo-txtcolor;
+    background-color: $logo-bgcolor;
+    padding-top: $padding-top;
+}
+
+#logo {
+    @include logo;
+}
+

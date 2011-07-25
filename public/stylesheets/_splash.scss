@@ -1,0 +1,41 @@
+@import "std";
+@import "logo";
+
+#splash-logo {
+    @include std-vlcentered($logo-width, $logo-height);
+    @include logo;
+}
+
+#splash-motto {
+    $width: 200px;
+    @include std-vlcentered($width, 50px, $hoffs: $logo-height + 10px);
+    @include stdtext;
+
+    text: {
+        align:center;
+    }
+    color: $stdfadedcolor;
+}
+
+#splash-message {
+    @include std-vlcentered($stdwidth, 50px, $hoffs: $logo-height + 40px);
+    @include stdtext;
+
+    text: {
+        align: center;
+    }
+}
+
+ul#splash-footer {
+    @include std-vlcentered($stdwidth, 50px, $hinit: 100%, $hoffs: -50px);
+    @include stdfooter;
+
+    padding: 0px;
+    text-align:center;
+    list-style: none;
+    li {
+        display: inline;
+        padding: 3px;
+    }
+}
+

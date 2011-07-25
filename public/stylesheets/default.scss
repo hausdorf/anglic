@@ -1,0 +1,6 @@
+@import "std";
+@import "splash";
+
+body {
+    @include stdbody;
+}
