@@ -1,4 +1,5 @@
 Anglous::Application.routes.draw do
+  get "about/index"
   get "splash/index"
 
   # The priority is based upon order of creation:
