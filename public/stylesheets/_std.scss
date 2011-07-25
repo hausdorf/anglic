@@ -12,6 +12,11 @@ $stdbgcolor: #E0E0E0;
     width: $stdwidth;
     padding: 0;
     margin: 0;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+
     color: $stdcolor;
     background-color: $stdbgcolor;
     font: {
