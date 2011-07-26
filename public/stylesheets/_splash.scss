@@ -1,15 +1,6 @@
 @import "std";
 @import "logo";
 
-#splash-center {
-    $width: 400px;
-    $height: 250px;
-    @include std-vlcentered($width, $height, $hoffs: -($height / 4));
-    background-color: $stdbgcolor;
-    background: -moz-radial-gradient(circle farthest-side, $stdbgcolor 60%, darken($stdbgcolor, 20%) 150%);
-    box-shadow: 0px 5px 10px 2px #333;
-}
-
 #splash-logo {
     @include std-vlcentered($logo-width, $logo-height);
     @include logo;
@@ -27,7 +18,7 @@
 }
 
 #splash-message {
-    @include std-vlcentered($stdwidth, 50px, $hoffs: $logo-height + 40px);
+    @include std-vlcentered($stdwidth, 50px, $hinit: 100%, $hoffs: -100px);
     @include stdtext;
 
     text: {
