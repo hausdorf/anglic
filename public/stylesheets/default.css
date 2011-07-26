@@ -2,10 +2,12 @@
  * _std.scss
  * Handles main standards of page, i.e., main body width, etc.
  */
+/* $stdcolor: #5F5C63; */
 /*
  * _std.scss
  * Handles main standards of page, i.e., main body width, etc.
  */
+/* $stdcolor: #5F5C63; */
 /*
  * _logo.scss
  * Contains all CSS for the anglic logo magic.
@@ -14,6 +16,7 @@
  * _std.scss
  * Handles main standards of page, i.e., main body width, etc.
  */
+/* $stdcolor: #5F5C63; */
 #logo {
   width: 100px;
   height: 37px;
@@ -56,8 +59,7 @@
   margin-right: -25px;
   margin-top: 60px;
   text-shadow: 0 -1px 0px white;
-  text-align: center;
-  color: #9a95a1; }
+  text-align: center; }
 
 #splash-message {
   position: fixed;
@@ -86,6 +88,8 @@ ul#splash-footer {
   padding: 0px;
   text-align: center;
   list-style: none; }
+  ul#splash-footer a {
+    color: #807a89; }
   ul#splash-footer li {
     display: inline;
     padding: 3px; }
@@ -96,7 +100,7 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  color: #5f5c63;
+  color: #595959;
   background-color: #e0e0e0;
   font-family: helvetica, arial;
   font-size: 13px; }
@@ -104,6 +108,6 @@ body {
     font-weight: bold;
     text-decoration: none;
     border-bottom: 1px dotted;
-    color: #5f5c63; }
+    color: #595959; }
     body a:hover {
       background-color: #fff; }
