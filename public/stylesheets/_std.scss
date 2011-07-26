@@ -3,7 +3,8 @@
  * Handles main standards of page, i.e., main body width, etc.
  */
 
-$stdcolor: #5F5C63;
+/* $stdcolor: #5F5C63; */
+$stdcolor: lighten(#000, 35%);
 $stdfadedcolor: #9A95A1;
 $stdwidth: 800px;
 $stdbgcolor: #E0E0E0;
@@ -45,6 +46,9 @@ $stdbgcolor: #E0E0E0;
     }
     font: {
         size: 10px;
+    }
+    a {
+        color: darken($stdfadedcolor, 10%);
     }
 }
 
