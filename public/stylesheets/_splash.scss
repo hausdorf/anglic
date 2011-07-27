@@ -1,6 +1,17 @@
 @import "std";
 @import "logo";
 
+@mixin splash-header-text {
+    color: #F7E6E6;
+    font: {
+        size: 20px;
+    }
+    a {
+        color: #F5C9C9;
+        &:hover {}
+    }
+}
+
 #splash-logo {
     @include std-vlcentered($logo-width, $logo-height);
     @include logo;
@@ -16,13 +27,17 @@
     }
 }
 
-#splash-message {
-    @include std-vlcentered($stdwidth, 50px, $hinit: 100%, $hoffs: -100px);
-    @include stdtext;
-
+#splash-header {
+    @include splash-header-text;
+    padding:30px;
     text: {
         align: center;
     }
+    background: {
+        color: #444;
+        image: -moz-radial-gradient(center 45deg, circle farthest-side, #666 20%, darken(#444, 5%) 100%);
+    }
+    box-shadow: inset 0px -4px 10px 4px darken(#999, 40%);
 }
 
 ul#splash-footer {
