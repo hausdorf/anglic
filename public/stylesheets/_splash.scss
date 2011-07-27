@@ -1,6 +1,6 @@
 @import "std";
 @import "logo";
-$height-init: 40%;
+$height-init: 50%;
 
 #splash-logo {
     @include std-vlcentered($logo-width, $logo-height, $hinit: $height-init);
@@ -27,9 +27,6 @@ ul#splash-opts {
     li {
         display: inline;
         padding: 10px;
-    }
-    img {
-        clear: both;
     }
 }
 
