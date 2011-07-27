@@ -31,7 +31,7 @@
 
 #splash-logo {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 100px;
   height: 50px;
@@ -51,7 +51,7 @@
 
 #splash-motto {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 50%;
   width: 200px;
   height: 50px;
@@ -61,16 +61,23 @@
   text-shadow: 0 -1px 0px white;
   text-align: center; }
 
-#splash-header {
-  color: #F7E6E6;
-  font-size: 20px;
-  padding: 30px;
+ul#splash-opts {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  width: 200px;
+  height: 50px;
+  margin-left: -100px;
+  margin-right: -25px;
+  margin-top: -90px;
+  padding: 0px;
   text-align: center;
-  background-color: #444;
-  background-image: -moz-radial-gradient(center 45deg, circle farthest-side, #666666 20%, #373737 100%);
-  box-shadow: inset 0px -4px 10px 4px #333333; }
-  #splash-header a {
-    color: #F5C9C9; }
+  list-style: none; }
+  ul#splash-opts li {
+    display: inline;
+    padding: 10px; }
+  ul#splash-opts img {
+    clear: both; }
 
 ul#splash-footer {
   position: fixed;
@@ -80,7 +87,7 @@ ul#splash-footer {
   height: 50px;
   margin-left: -400px;
   margin-right: -25px;
-  margin-top: -50px;
+  margin-top: -40px;
   color: #9a95a1;
   text-shadow: 0 -1px 0px white;
   font-size: 10px;
