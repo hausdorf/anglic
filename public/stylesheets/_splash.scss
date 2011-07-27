@@ -1,25 +1,15 @@
 @import "std";
 @import "logo";
-
-@mixin splash-header-text {
-    color: #F7E6E6;
-    font: {
-        size: 20px;
-    }
-    a {
-        color: #F5C9C9;
-        &:hover {}
-    }
-}
+$height-init: 40%;
 
 #splash-logo {
-    @include std-vlcentered($logo-width, $logo-height);
+    @include std-vlcentered($logo-width, $logo-height, $hinit: $height-init);
     @include logo;
 }
 
 #splash-motto {
     $width: 200px;
-    @include std-vlcentered($width, 50px, $hoffs: $logo-height + 10px);
+    @include std-vlcentered($width, 50px, $hinit: $height-init, $hoffs: $logo-height + 10px);
     @include stdtext;
 
     text: {
@@ -27,21 +17,24 @@
     }
 }
 
-#splash-header {
-    @include splash-header-text;
-    padding:30px;
-    text: {
-        align: center;
+ul#splash-opts {
+    $width: 200px;
+    @include std-vlcentered($width, 50px, $hinit: 100%, $hoffs: -(90px));
+
+    padding: 0px;
+    text-align:center;
+    list-style: none;
+    li {
+        display: inline;
+        padding: 10px;
     }
-    background: {
-        color: #444;
-        image: -moz-radial-gradient(center 45deg, circle farthest-side, #666 20%, darken(#444, 5%) 100%);
+    img {
+        clear: both;
     }
-    box-shadow: inset 0px -4px 10px 4px darken(#999, 40%);
 }
 
 ul#splash-footer {
-    @include std-vlcentered($stdwidth, 50px, $hinit: 100%, $hoffs: -50px);
+    @include std-vlcentered($stdwidth, 50px, $hinit: 100%, $hoffs: -40px);
     @include stdfooter;
 
     padding: 0px;
