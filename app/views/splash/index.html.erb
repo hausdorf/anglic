@@ -1,7 +1,3 @@
-<div id="splash-header">
-    Want in on the beta? <%= link_to 'Try Chinese.', '' %>
-</div>
-
 <div id="splash-logo">
     anglic
 </div>
@@ -10,10 +6,16 @@
     <b><i>Fast</i></b> language learning.
 </div>
 
+<ul id="splash-opts">
+    <li><%= image_tag '19-gear.png' %></li>
+    <li><%= image_tag '103-map.png' %></li>
+    <li><%= image_tag '111-user.png' %></li>
+</ul >
+
 <ul id="splash-footer">
     <li>anglic team</li>
     <li> + </li>
-    <li><%= link_to 'about', {:controller => 'about', :action => 'index'} %></li>
-    <li> | </li>
-    <li><%= link_to 'writing', '' %></li>
+    <li><%= link_to 'about us', {:controller => 'about', :action => 'index'} %></li>
+    <!--<li> | </li>
+    <li><%= link_to 'writing', '' %></li>-->
 </ul>
