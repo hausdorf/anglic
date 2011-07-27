@@ -10,7 +10,6 @@ $stdwidth: 800px;
 $stdbgcolor: #E0E0E0;
 
 @mixin stdbody {
-    width: $stdwidth;
     padding: 0;
     margin: 0;
     margin: {
